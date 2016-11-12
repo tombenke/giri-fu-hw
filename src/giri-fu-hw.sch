@@ -19908,14 +19908,14 @@ Grid 5.08 mm&lt;p&gt;
 <part name="D4" library="diode" deviceset="1N4004" device=""/>
 <part name="C5" library="rcl" deviceset="CPOL-EU" device="E35-12AXIAL"/>
 <part name="C6" library="docu-dummy" deviceset="C" device=""/>
-<part name="X10" library="con-wago-508" deviceset="W237-02P" device=""/>
-<part name="X11" library="con-wago-508" deviceset="W237-02P" device=""/>
-<part name="X12" library="con-wago-508" deviceset="W237-02P" device=""/>
-<part name="X13" library="con-wago-508" deviceset="W237-02P" device=""/>
-<part name="X14" library="con-wago-508" deviceset="W237-02P" device=""/>
-<part name="X15" library="con-wago-508" deviceset="W237-02P" device=""/>
-<part name="X16" library="con-wago-508" deviceset="W237-02P" device=""/>
-<part name="X17" library="con-wago-508" deviceset="W237-02P" device=""/>
+<part name="SWITCH_1" library="con-wago-508" deviceset="W237-02P" device=""/>
+<part name="SWITCH_2" library="con-wago-508" deviceset="W237-02P" device=""/>
+<part name="SWITCH_3" library="con-wago-508" deviceset="W237-02P" device=""/>
+<part name="SWITCH_4" library="con-wago-508" deviceset="W237-02P" device=""/>
+<part name="SWITCH_5" library="con-wago-508" deviceset="W237-02P" device=""/>
+<part name="SWITCH_6" library="con-wago-508" deviceset="W237-02P" device=""/>
+<part name="24VAC_IN" library="con-wago-508" deviceset="W237-02P" device=""/>
+<part name="12VAC_IN" library="con-wago-508" deviceset="W237-02P" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
@@ -19968,22 +19968,22 @@ Grid 5.08 mm&lt;p&gt;
 <instance part="D4" gate="1" x="48.26" y="58.42"/>
 <instance part="C5" gate="G$1" x="88.9" y="45.72"/>
 <instance part="C6" gate="G$1" x="121.92" y="45.72"/>
-<instance part="X10" gate="-1" x="238.76" y="137.16" rot="R180"/>
-<instance part="X10" gate="-2" x="238.76" y="142.24" rot="R180"/>
-<instance part="X11" gate="-1" x="238.76" y="121.92" rot="R180"/>
-<instance part="X11" gate="-2" x="238.76" y="127" rot="R180"/>
-<instance part="X12" gate="-1" x="238.76" y="106.68" rot="R180"/>
-<instance part="X12" gate="-2" x="238.76" y="111.76" rot="R180"/>
-<instance part="X13" gate="-1" x="238.76" y="91.44" rot="R180"/>
-<instance part="X13" gate="-2" x="238.76" y="96.52" rot="R180"/>
-<instance part="X14" gate="-1" x="238.76" y="76.2" rot="R180"/>
-<instance part="X14" gate="-2" x="238.76" y="81.28" rot="R180"/>
-<instance part="X15" gate="-1" x="238.76" y="60.96" rot="R180"/>
-<instance part="X15" gate="-2" x="238.76" y="66.04" rot="R180"/>
-<instance part="X16" gate="-1" x="238.76" y="45.72" rot="R180"/>
-<instance part="X16" gate="-2" x="238.76" y="50.8" rot="R180"/>
-<instance part="X17" gate="-1" x="27.94" y="50.8"/>
-<instance part="X17" gate="-2" x="27.94" y="45.72"/>
+<instance part="SWITCH_1" gate="-1" x="238.76" y="137.16" rot="R180"/>
+<instance part="SWITCH_1" gate="-2" x="238.76" y="142.24" rot="R180"/>
+<instance part="SWITCH_2" gate="-1" x="238.76" y="121.92" rot="R180"/>
+<instance part="SWITCH_2" gate="-2" x="238.76" y="127" rot="R180"/>
+<instance part="SWITCH_3" gate="-1" x="238.76" y="106.68" rot="R180"/>
+<instance part="SWITCH_3" gate="-2" x="238.76" y="111.76" rot="R180"/>
+<instance part="SWITCH_4" gate="-1" x="238.76" y="91.44" rot="R180"/>
+<instance part="SWITCH_4" gate="-2" x="238.76" y="96.52" rot="R180"/>
+<instance part="SWITCH_5" gate="-1" x="238.76" y="76.2" rot="R180"/>
+<instance part="SWITCH_5" gate="-2" x="238.76" y="81.28" rot="R180"/>
+<instance part="SWITCH_6" gate="-1" x="238.76" y="60.96" rot="R180"/>
+<instance part="SWITCH_6" gate="-2" x="238.76" y="66.04" rot="R180"/>
+<instance part="24VAC_IN" gate="-1" x="238.76" y="45.72" rot="R180"/>
+<instance part="24VAC_IN" gate="-2" x="238.76" y="50.8" rot="R180"/>
+<instance part="12VAC_IN" gate="-1" x="27.94" y="50.8"/>
+<instance part="12VAC_IN" gate="-2" x="27.94" y="45.72"/>
 <instance part="GND7" gate="1" x="106.68" y="27.94"/>
 <instance part="GND12" gate="1" x="88.9" y="27.94"/>
 <instance part="GND13" gate="1" x="121.92" y="27.94"/>
@@ -20244,7 +20244,7 @@ Grid 5.08 mm&lt;p&gt;
 <junction x="218.44" y="134.62"/>
 <wire x1="218.44" y1="50.8" x2="218.44" y2="58.42" width="0.1524" layer="91"/>
 <junction x="218.44" y="88.9"/>
-<pinref part="X16" gate="-2" pin="KL"/>
+<pinref part="24VAC_IN" gate="-2" pin="KL"/>
 <wire x1="233.68" y1="50.8" x2="218.44" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -20324,7 +20324,7 @@ Grid 5.08 mm&lt;p&gt;
 <wire x1="40.64" y1="58.42" x2="45.72" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="D1" gate="1" pin="C"/>
 <wire x1="45.72" y1="50.8" x2="40.64" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="X17" gate="-1" pin="KL"/>
+<pinref part="12VAC_IN" gate="-1" pin="KL"/>
 <wire x1="40.64" y1="50.8" x2="33.02" y2="50.8" width="0.1524" layer="91"/>
 <junction x="40.64" y="50.8"/>
 </segment>
@@ -20338,31 +20338,31 @@ Grid 5.08 mm&lt;p&gt;
 <pinref part="D2" gate="1" pin="C"/>
 <wire x1="71.12" y1="50.8" x2="76.2" y2="50.8" width="0.1524" layer="91"/>
 <junction x="76.2" y="50.8"/>
-<pinref part="X17" gate="-2" pin="KL"/>
+<pinref part="12VAC_IN" gate="-2" pin="KL"/>
 <wire x1="76.2" y1="45.72" x2="33.02" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$35" class="0">
 <segment>
 <wire x1="228.6" y1="137.16" x2="228.6" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="X16" gate="-1" pin="KL"/>
+<pinref part="24VAC_IN" gate="-1" pin="KL"/>
 <wire x1="228.6" y1="121.92" x2="228.6" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="106.68" x2="228.6" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="91.44" x2="228.6" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="76.2" x2="228.6" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="60.96" x2="228.6" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="45.72" x2="228.6" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="X15" gate="-1" pin="KL"/>
+<pinref part="SWITCH_6" gate="-1" pin="KL"/>
 <wire x1="233.68" y1="60.96" x2="228.6" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="X14" gate="-1" pin="KL"/>
+<pinref part="SWITCH_5" gate="-1" pin="KL"/>
 <wire x1="233.68" y1="76.2" x2="228.6" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="X13" gate="-1" pin="KL"/>
+<pinref part="SWITCH_4" gate="-1" pin="KL"/>
 <wire x1="233.68" y1="91.44" x2="228.6" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="X12" gate="-1" pin="KL"/>
+<pinref part="SWITCH_3" gate="-1" pin="KL"/>
 <wire x1="233.68" y1="106.68" x2="228.6" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="X11" gate="-1" pin="KL"/>
+<pinref part="SWITCH_2" gate="-1" pin="KL"/>
 <wire x1="233.68" y1="121.92" x2="228.6" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="X10" gate="-1" pin="KL"/>
+<pinref part="SWITCH_1" gate="-1" pin="KL"/>
 <wire x1="233.68" y1="137.16" x2="228.6" y2="137.16" width="0.1524" layer="91"/>
 <junction x="228.6" y="60.96"/>
 <junction x="228.6" y="76.2"/>
@@ -20373,42 +20373,42 @@ Grid 5.08 mm&lt;p&gt;
 </net>
 <net name="N$28" class="0">
 <segment>
-<pinref part="X10" gate="-2" pin="KL"/>
+<pinref part="SWITCH_1" gate="-2" pin="KL"/>
 <pinref part="K1" gate="2" pin="S"/>
 <wire x1="233.68" y1="142.24" x2="223.52" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$29" class="0">
 <segment>
-<pinref part="X11" gate="-2" pin="KL"/>
+<pinref part="SWITCH_2" gate="-2" pin="KL"/>
 <pinref part="K2" gate="2" pin="S"/>
 <wire x1="233.68" y1="127" x2="223.52" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$30" class="0">
 <segment>
-<pinref part="X12" gate="-2" pin="KL"/>
+<pinref part="SWITCH_3" gate="-2" pin="KL"/>
 <pinref part="K3" gate="2" pin="S"/>
 <wire x1="233.68" y1="111.76" x2="223.52" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$31" class="0">
 <segment>
-<pinref part="X13" gate="-2" pin="KL"/>
+<pinref part="SWITCH_4" gate="-2" pin="KL"/>
 <pinref part="K4" gate="2" pin="S"/>
 <wire x1="233.68" y1="96.52" x2="223.52" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$32" class="0">
 <segment>
-<pinref part="X14" gate="-2" pin="KL"/>
+<pinref part="SWITCH_5" gate="-2" pin="KL"/>
 <pinref part="K5" gate="2" pin="S"/>
 <wire x1="233.68" y1="81.28" x2="223.52" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$33" class="0">
 <segment>
-<pinref part="X15" gate="-2" pin="KL"/>
+<pinref part="SWITCH_6" gate="-2" pin="KL"/>
 <pinref part="K6" gate="2" pin="S"/>
 <wire x1="233.68" y1="66.04" x2="223.52" y2="66.04" width="0.1524" layer="91"/>
 </segment>
