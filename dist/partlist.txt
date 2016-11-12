@@ -1,0 +1,40 @@
+Partlist
+
+Exported from giri-fu-hw.brd at 2016.11.12. 7:37
+
+EAGLE Version 6.5.0 Copyright (c) 1988-2013 CadSoft
+
+Assembly variant: 
+
+Part     Value          Package      Library      Position (inch)       Orientation
+
+C1       22p            C025-025X050 rcl          (1.75 1.65)           R0
+C2       22p            C025-025X050 rcl          (1.5 1.65)            R0
+C3       100n           C025-025X050 rcl          (1.85 1.4)            R270
+C4       10uF           E2-5         adafruit     (2 1.4)               R270
+C5                      E35-12       rcl          (0.95 1.35)           R180
+D1       1N4004         DO41-10      diode        (0.7 0.5)             R0
+D2       1N4004         DO41-10      diode        (0.5 0.65)            R0
+D3       1N4004         DO41-10      diode        (0.5 0.95)            R180
+D4       1N4004         DO41-10      diode        (0.7 0.8)             R180
+IC1      ATMEGA168-20P  DIL28-3      adafruit     (2.65 1.85)           R180
+IC2      7805T          TO220H       linear       (0.75 1.85)           R90
+IC3      ULN2003AN      DIL16        uln-udn      (2.95 1.35)           R180
+ISP1     AVRISP-6       AVRISP       adafruit     (2.4 1.35)            R0
+K1       G5V1           G5V1         relay        (3.2 0.65)            R90
+K2       G5V1           G5V1         relay        (2.8 0.65)            R90
+K3       G5V1           G5V1         relay        (2.4 0.65)            R90
+K4       G5V1           G5V1         relay        (2 0.65)              R90
+K5       G5V1           G5V1         relay        (1.6 0.65)            R90
+K6       G5V1           G5V1         relay        (1.2 0.65)            R90
+Q1       16MHz          HC49U-V      adafruit     (1.6 1.85)            R180
+R1       10K            0207/10      rcl          (2.15 1.4)            R270
+R2       1M             0207/10      rcl          (1.6 2)               R180
+X10                     W237-132     con-wago-508 (3.2 0.2)             R180
+X11                     W237-132     con-wago-508 (2.8 0.2)             R180
+X12                     W237-132     con-wago-508 (2.4 0.2)             R180
+X13                     W237-132     con-wago-508 (2 0.2)               R180
+X14                     W237-132     con-wago-508 (1.6 0.2)             R180
+X15                     W237-132     con-wago-508 (1.2 0.2)             R180
+X16                     W237-132     con-wago-508 (0.8 0.2)             R180
+X17                     W237-132     con-wago-508 (0.4 0.2)             R180
