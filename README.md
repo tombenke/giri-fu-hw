@@ -3,14 +3,14 @@ giri-fu-hw
 
 The hardware module of giri-fu functional unit, that is asimple relay board, with an MCU unit.
 
-The v1.0.0 version is just documenting [the early prototype](docs/images/prototype?raw=true "giri-fu-hw prototype"),
+The v1.0.0 version is just documenting [the early prototype](docs/images/prototype.jpg?raw=true "giri-fu-hw prototype"),
 that was made on a raster panel.
 
 The PCB layout was intentionally designed very simple, in order to make it easy to reproduce with DIY technologies.
 
 The top layer can be substituted with simple, straight jumper wires.
 
-![Alt text](docs/images/prototype?raw=true "giri-fu-hw prototype")
+![Alt text](docs/images/prototype.jpg?raw=true "giri-fu-hw prototype")
 
 ## Features:
 
