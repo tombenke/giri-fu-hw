@@ -32,6 +32,19 @@ Boxing: The minimum required internal size of box: 4.75 x 3 x 1.5 inch
 
 Mounting: N.A.
 
+Inputs:
+
+- 12V AC, min: ? A (TBD.)
+- 24V AC, min: ? A (TBD.)
+
+Outputs (6x):
+
+- Carry current: 2 A
+- Max. operating voltage: 125 VAC, 60 VDC
+- Max. operating current: 1 A
+- Max. switching capacity: 62.50 VA, 30W
+- Min. permissible load: 1 mA, 5 VDC
+
 
 ## Artifacts
 
@@ -42,13 +55,13 @@ The `src` folder holds the EAGLE files:
 
 The `dist` folder contains the final products for manufacturing:
 
-- [The schematic diagram](dist/giri-fu-hw_brd.pdf)
-- [The PCB layout](dist/giri-fu-hw_sch.pdf)
+- [The schematic diagram](dist/giri-fu-hw_sch.pdf)
+- [The PCB layout](dist/giri-fu-hw_brd.pdf)
 - [PCB top layer (to print)](dist/giri-fu-hw_top.pdf)
 - [PCB bottom layer (to print)](dist/giri-fu-hw_bottom.pdf)
 
 
-## References:
+## References
 
 - [giri-fu firmware](https://github.com/tombenke/giri-fu)
 - [ATMega328P datasheet](http://www.atmel.com/Images/Atmel-42735-8-bit-AVR-Microcontroller-ATmega328-328P_datasheet.pdf)
