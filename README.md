@@ -1,9 +1,15 @@
 giri-fu-hw
 ==========
 
-Hardware module of the giri-fu functional unit, that is a simple relay board, with an MCU unit.
+Hardware module of the giri-fu functional unit, that is a simple relay board, with its own MCU.
 
-This (v1.0.x) version is just documenting [the early prototype](docs/images/prototype.jpg?raw=true "giri-fu-hw prototype"),
+It is a proof of concept for a tiny autonomous device, that is able to control 24 VAC magnetic valves in real circumstances:
+
+- wet and dirty environment,
+- wide range of temperature,
+- mechanical stress.
+
+Th v1.0.x version is just documenting [the early prototype](docs/images/prototype.jpg?raw=true "giri-fu-hw prototype"),
 that was made on a raster panel. (Note: The PCB design differs from the raster panel version).
 
 The PCB layout was intentionally designed to be very simple, in order to make it easy to reproduce with DIY technologies.
@@ -13,7 +19,7 @@ The top layer can be substituted with, straight jumper wires, so it is enought t
 The firmware implementation can be found in the [giri-fu firmware repository](https://github.com/tombenke/giri-fu).
 
 
-## Features:
+## Features
 
 - Standalone MCU (ATMega328P, 16MHz)
 - High-voltage, high-current darlington transistor array (ULN2003A)
