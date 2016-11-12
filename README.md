@@ -9,7 +9,11 @@ It is a proof of concept for a tiny autonomous device, that is able to control 2
 - wide range of temperature,
 - mechanical stress.
 
-Th v1.0.x version is just documenting [the early prototype](docs/images/prototype.jpg?raw=true "giri-fu-hw prototype"),
+The [functional block diagram of the unit](docs/images/giri-fu-hw_fbd.png) demonstrates how to connect it into its environment.
+
+![functional block diagram of the unit](docs/images/giri-fu-hw_fbd.png?raw=true)
+
+The v1.0.x version is just documenting [the early prototype](docs/images/prototype.jpg?raw=true "giri-fu-hw prototype"),
 that was made on a raster panel. (Note: The PCB design differs from the raster panel version).
 
 The PCB layout was intentionally designed to be very simple, in order to make it easy to reproduce with DIY technologies.
