@@ -9,7 +9,7 @@ It is a proof of concept for a tiny autonomous device, that is able to control 2
 - wide range of temperature,
 - mechanical stress.
 
-The [functional block diagram of the unit](docs/images/giri-fu-hw_fbd.png) demonstrates how to connect it into its environment.
+The [functional block diagram of the unit](docs/images/giri-fu-hw_fbd.png) below demonstrates how to connect it into its environment:
 
 ![functional block diagram of the unit](docs/images/giri-fu-hw_fbd.png?raw=true)
 
@@ -72,4 +72,6 @@ The `dist` folder contains the final products for manufacturing:
 - [Rayex RSY-5 relay datasheet](docs/datasheets/RSY-5G5V1K5V1_EN.pdf)
 - [ULN2003A datsheet](https://www.sparkfun.com/datasheets/IC/ULN2003A.pdf)
 - [Making of PCBs at home, DIY using inexpenive materials](https://www.youtube.com/watch?v=mv7Y0A9YeUc)
+- [yEd - GraphML Editor, used for Functional Block Diagram creation](http://www.yworks.com/products/yed)
+- [EAGLE PCB Design tool](https://cadsoft.io/)
 
