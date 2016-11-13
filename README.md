@@ -1,5 +1,5 @@
-giri-fu-hw
-==========
+giri-fu-hw v1.0
+===============
 
 Hardware module of the giri-fu functional unit, that is a simple relay board, with its own MCU.
 
