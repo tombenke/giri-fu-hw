@@ -19876,6 +19876,78 @@ Grid 5.08 mm&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="max485">
+<description>MAX485</description>
+<packages>
+<package name="DIL08">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="5.08" y1="2.921" x2="-5.08" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="2.921" x2="-5.08" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.921" x2="-5.08" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="1.016" x2="-5.08" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-3.81" y="-3.81" drill="0.8128" shape="offset" rot="R270"/>
+<pad name="2" x="-1.27" y="-3.81" drill="0.8128" shape="offset" rot="R270"/>
+<pad name="7" x="-1.27" y="3.81" drill="0.8128" shape="offset" rot="R90"/>
+<pad name="8" x="-3.81" y="3.81" drill="0.8128" shape="offset" rot="R90"/>
+<pad name="3" x="1.27" y="-3.81" drill="0.8128" shape="offset" rot="R270"/>
+<pad name="4" x="3.81" y="-3.81" drill="0.8128" shape="offset" rot="R270"/>
+<pad name="6" x="1.27" y="3.81" drill="0.8128" shape="offset" rot="R90"/>
+<pad name="5" x="3.81" y="3.81" drill="0.8128" shape="offset" rot="R90"/>
+<text x="-5.334" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-3.556" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="MAX485">
+<description>&lt;h1&gt;MAX485&lt;/h1&gt;
+&lt;p&gt;RS-485/RS-422 Transceivers&lt;/p&gt;</description>
+<wire x1="-5.08" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<text x="-5.08" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<text x="10.16" y="7.62" size="1.778" layer="95" rot="R180">&gt;NAME</text>
+<pin name="GND" x="15.24" y="-5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="A" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="B" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="VCC" x="15.24" y="2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="/RE" x="-10.16" y="0" length="middle" direction="in"/>
+<pin name="DI" x="-10.16" y="-5.08" length="middle" direction="in"/>
+<pin name="R0" x="-10.16" y="2.54" length="middle" direction="out"/>
+<pin name="DE" x="-10.16" y="-2.54" length="middle"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MAX485" prefix="IC">
+<description>MAX485</description>
+<gates>
+<gate name="G$1" symbol="MAX485" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="DIL08">
+<connects>
+<connect gate="G$1" pin="/RE" pad="2"/>
+<connect gate="G$1" pin="A" pad="6"/>
+<connect gate="G$1" pin="B" pad="7"/>
+<connect gate="G$1" pin="DE" pad="3"/>
+<connect gate="G$1" pin="DI" pad="4"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="R0" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER_PARTNO" value="MAX485ECPA+" constant="no"/>
+<attribute name="MOUSER_PARTNO" value="MAX485ECPA+" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -19932,6 +20004,9 @@ Grid 5.08 mm&lt;p&gt;
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
 <part name="P+5" library="supply1" deviceset="VCC" device=""/>
+<part name="RS-485" library="con-wago-508" deviceset="W237-02P" device=""/>
+<part name="IC4" library="max485" deviceset="MAX485" device=""/>
+<part name="GND6" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20000,6 +20075,10 @@ Grid 5.08 mm&lt;p&gt;
 <instance part="GND8" gate="1" x="58.42" y="27.94"/>
 <instance part="P+4" gate="VCC" x="121.92" y="60.96"/>
 <instance part="P+5" gate="VCC" x="205.74" y="149.86"/>
+<instance part="RS-485" gate="-1" x="238.76" y="152.4" rot="R180"/>
+<instance part="RS-485" gate="-2" x="238.76" y="157.48" rot="R180"/>
+<instance part="IC4" gate="G$1" x="142.24" y="160.02"/>
+<instance part="GND6" gate="1" x="162.56" y="149.86" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -20068,6 +20147,12 @@ Grid 5.08 mm&lt;p&gt;
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="121.92" y1="30.48" x2="121.92" y2="40.64" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="IC4" gate="G$1" pin="GND"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+<wire x1="157.48" y1="154.94" x2="162.56" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="154.94" x2="162.56" y2="152.4" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$12" class="0">
 <segment>
@@ -20126,6 +20211,12 @@ Grid 5.08 mm&lt;p&gt;
 <wire x1="48.26" y1="157.48" x2="48.26" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="160.02" x2="40.64" y2="160.02" width="0.1524" layer="91"/>
 <junction x="40.64" y="160.02"/>
+<pinref part="IC4" gate="G$1" pin="VCC"/>
+<wire x1="157.48" y1="162.56" x2="162.56" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="162.56" x2="162.56" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="170.18" x2="48.26" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="170.18" x2="48.26" y2="160.02" width="0.1524" layer="91"/>
+<junction x="48.26" y="160.02"/>
 </segment>
 <segment>
 <pinref part="IC3" gate="A" pin="CD+"/>
@@ -20474,6 +20565,58 @@ Grid 5.08 mm&lt;p&gt;
 <wire x1="119.38" y1="134.62" x2="119.38" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="A" pin="I2"/>
 <wire x1="119.38" y1="129.54" x2="132.08" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="(PCI16/RXD)PD0"/>
+<wire x1="106.68" y1="119.38" x2="109.22" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="119.38" x2="109.22" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="IC4" gate="G$1" pin="R0"/>
+<wire x1="109.22" y1="162.56" x2="132.08" y2="162.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="(PCI17/TXD)PD1"/>
+<wire x1="106.68" y1="116.84" x2="111.76" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="116.84" x2="111.76" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="IC4" gate="G$1" pin="DI"/>
+<wire x1="111.76" y1="154.94" x2="132.08" y2="154.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$36" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="(PCI20/XCK/T0)PD4"/>
+<wire x1="106.68" y1="109.22" x2="114.3" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="109.22" x2="114.3" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="IC4" gate="G$1" pin="/RE"/>
+<wire x1="114.3" y1="160.02" x2="132.08" y2="160.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$38" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="(PCI21/T1/OC0B)PD5"/>
+<wire x1="106.68" y1="106.68" x2="116.84" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="106.68" x2="116.84" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="IC4" gate="G$1" pin="DE"/>
+<wire x1="116.84" y1="157.48" x2="132.08" y2="157.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="IC4" gate="G$1" pin="A"/>
+<pinref part="RS-485" gate="-2" pin="KL"/>
+<wire x1="157.48" y1="157.48" x2="233.68" y2="157.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="IC4" gate="G$1" pin="B"/>
+<wire x1="157.48" y1="160.02" x2="226.06" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="160.02" x2="226.06" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="RS-485" gate="-1" pin="KL"/>
+<wire x1="226.06" y1="152.4" x2="233.68" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
