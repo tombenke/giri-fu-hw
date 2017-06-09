@@ -1,4 +1,4 @@
-giri-fu-hw v1.0
+giri-fu-hw v2.0
 ===============
 
 Hardware module of the giri-fu functional unit, that is a simple relay board, with its own MCU.
@@ -29,6 +29,7 @@ The firmware implementation can be found in the [giri-fu firmware repository](ht
 - High-voltage, high-current darlington transistor array (ULN2003A)
 - 6 relays to switch 24V AC current, for magnetic valves (RSY-5)
 - 12V AC input for Power supply
+- RS-485 serial communication port
 
 Dimensions: 3.6 x 2.15 x 0.5 inch
 
